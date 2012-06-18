@@ -1,0 +1,72 @@
+article{
+  float: left;
+}
+
+body{
+  background:#333;
+  font-size:16px;
+  font-family:Arial;
+}
+
+section{
+  background: #ffffff;
+  margin:10px auto;
+  overflow:hidden;
+  padding:10px 0;
+}
+
+ul{
+  text-align: left;
+  list-style-type:none;
+}
+
+#about{
+  width:70%;
+}
+
+#menu{
+  width:30%;
+}
+
+@media screen and (max-width:1000px){
+  a{
+    display:block;
+    width:100px;
+  }
+  li{
+    float:left;
+  }
+
+  ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+  }
+  #about{
+    width:100%;
+  }
+  #menu{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:700px){
+  li{
+    float:left;
+  }
+
+  ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+  }
+
+  #about{
+    width:100%;
+  }
+  #menu{
+    width:100%;
+  }
+}
