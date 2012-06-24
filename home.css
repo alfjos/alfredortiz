@@ -3,8 +3,10 @@
 *{margin: 0;}
 
 article{ 
+  background: #ffffff;
   border-radius: 0.5em;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  margin: 0em 0em 1em 0em;
 }
 
 body{
@@ -14,16 +16,29 @@ body{
   font-family:Arial;
 }
 
+h1{
+  margin: 0em 0.5em;
+}
+
 header{
   background: #ffffff;
   border-radius: 0.5em;
   box-shadow: 5px 5px 10px black;
   margin: 1em auto;
-  padding: 1em;
+  padding: 1em 0em;
   text-align: right;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
   width: 90%;
 }
+
+nav{
+  background: #ffffff; 
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  float: left;
+  width:15%;
+}
+
 li{
   padding: 0.5em;
 }
@@ -33,12 +48,9 @@ p{
 }
 
 section{
-  background: #ffffff;
-  border-radius: 0.5em;
-  box-shadow: 5px 5px 10px black;
   margin: 1em auto;
+  padding: 0em 1em;
   overflow:hidden;
-  padding: 1em;
   width: 90%;
 }
 
@@ -48,36 +60,29 @@ ul{
 }
 
 #about{
-  background: blue; 
   float: right;
   width:83%;
 }
-
-#menu{
-  background: red; 
-  float: left;
-  width:15%;
+#gallery{
+  float: right;
+  width:83%;
 }
-
 @media screen and (max-width:1000px){
-  a{
-    display:block
+  nav{
+    margin: 0.5em 0;
+    width:100%;
   }
   li{
     float:left;
   }
-
   ul{
     list-style-type:none;
     margin:0;
     padding:0;
     overflow:hidden;
   }
+
   #about{
-    margin: 0.5em 0;
-    width:100%;
-  }
-  #menu{
     margin: 0.5em 0;
     width:100%;
   }
@@ -87,7 +92,10 @@ ul{
   li{
     float:left;
   }
-
+  nav{
+    margin: 0.5em 0;
+    width:100%;
+  }
   ul{
     list-style-type:none;
     margin:0;
@@ -96,10 +104,6 @@ ul{
   }
 
   #about{
-    margin: 0.5em 0;
-    width:100%;
-  }
-  #menu{
     margin: 0.5em 0;
     width:100%;
   }
